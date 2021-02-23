@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог новостного портала по архитектуре</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <a href="index.html" class="main-header__logo">
+            <img class="main-header__logo-img" src="img/logo.svg" alt="Архитектурный блог" width="370" height="40">
+        </a>
+        <nav class="main-header__navigation">
+            <ul class="main-header__nav-list">
+                <li class="main-header__nav-item">
+                    <a href="#" class="main-header__nav-link">Современные здания</a>
+                </li>
+                <li class="main-header__nav-item">
+                    <a href="#" class="main-header__nav-link">Старинные здания</a>
+                </li>
+                <li class="main-header__nav-item">
+                    <a href="#" class="main-header__nav-link">Последние проекты</a>
+                </li>
+                <li class="main-header__nav-item">
+                    <a class="main-header__nav-link main-header__nav-link--active">Архитектурные новости</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-data">
+            <h1 class="title">Архитектурные новости</h1>
+            <ul class="page-title__breadcrumbs breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link breadcrumbs__link--active">Архитектурные новости</a>
+                </li>
+            </ul>
+        </section>
+        <section class="catalog">
+            <h2 class="catalog__title subtitle">Самые необычные здания во всем мире</h2>
+            <p class="catalog__log-number">Номер 10 / 50</p>
+            <ul class="catalog__list">
+                <li class="catalog__item">
+                    <a href="post.html" class="catalog__link">
+                        <p class="catalog__post-title">Прекрасное офисное здание «Доминион»</p>
+                        <img class="catalog__post-img" src="img/catalog-1.jpg" alt="" width="277" height="421">
+                        <p class="catalog__post-btn">Перейти</p>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a href="post.html" class="catalog__link">
+                        <p class="catalog__post-title">Жилое помещение «с чешуей»</p>
+                        <img class="catalog__post-img" src="img/catalog-2.jpg" alt="" width="358" height="489">
+                        <p class="catalog__post-btn">Перейти</p>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a href="post.html" class="catalog__link">
+                        <p class="catalog__post-title">Деконструктивизм во всей своей красе</p>
+                        <img class="catalog__post-img" src="img/catalog-3.jpg" alt="" width="277" height="421">
+                        <p class="catalog__post-btn">Перейти</p>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a href="post.html" class="catalog__link">
+                        <p class="catalog__post-title">Построеный из кубов</p>
+                        <img class="catalog__post-img" src="img/catalog-4.jpg" alt="" width="277" height="363">
+                        <p class="catalog__post-btn">Перейти</p>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a href="post.html" class="catalog__link">
+                        <p class="catalog__post-title">Цветочные мотивы в современной архитектуре</p>
+                        <img class="catalog__post-img" src="img/catalog-5.jpg" alt="" width="358" height="324">
+                        <p class="catalog__post-btn">Перейти</p>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a href="post.html" class="catalog__link">
+                        <p class="catalog__post-title">Купольные постройки</p>
+                        <img class="catalog__post-img" src="img/catalog-6.jpg" alt="" width="277" height="363">
+                        <p class="catalog__post-btn">Перейти</p>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a href="post.html" class="catalog__link">
+                        <p class="catalog__post-title">Здания будто из фильма «город грехов»</p>
+                        <img class="catalog__post-img" src="img/catalog-7.jpg" alt="" width="277" height="421">
+                        <p class="catalog__post-btn">Перейти</p>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a href="post.html" class="catalog__link">
+                        <p class="catalog__post-title">Необычные лестницы</p>
+                        <img class="catalog__post-img" src="img/catalog-8.jpg" alt="" width="358" height="489">
+                        <p class="catalog__post-btn">Перейти</p>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a href="post.html" class="catalog__link">
+                        <p class="catalog__post-title">Кости животных в архитектуре</p>
+                        <img class="catalog__post-img" src="img/catalog-9.jpg" alt="" width="277" height="421">
+                        <p class="catalog__post-btn">Перейти</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="subscribe">
+            <h2 class="subscribe__title">Подпишитесь на нашу e-mail рассылку</h2>
+            <form class="subscribe__form" action="#" method="post" id="subscribe-form-1">
+                <input class="subscribe__input" type="email" name="subscribe-input" placeholder="Введите Ваш e-mail">
+                <button class="subscribe__btn button" type="submit">Подписаться</button>
+            </form>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <ul class="social">
+            <li class="social__item">
+                <a href="#" class="social__link social__link--facebook">Фейсбук</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--twitter">Твиттер</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--instagram">Инстаграм</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--pinterest">Пинтерест</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--gplus">Гугл Плюс</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--spotify">Спотифай</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--tumblr">Тамблер</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+<!--
+
+У страницы блога и страницы новости ещё есть «хлебные крошки» (Breadcrumbs — путь по сайту к странице, на которой мы находимся), после них следует название категории, потом название материала или подкатегории (возможно, это тег).
+
+У страницы блога есть компактная навигация по блогу (сведения о том, что мы видим первые 10 новостей из 50 существующих) наверху и традиционная навигация по более старым страницам блога внизу.
+
+У страницы новости кроме уже перечисленного есть мета-данные поста, лид (вводная часть текста, обычно выделяется), блок иллюстраций с заголовком, подписью и несколькими изображениями, сбоку есть кнопки «поделиться» и «наверх», внизу страницы есть блок «С этим читают».
+
+Можно выделить разделы, общие для всех страниц: это шапка и подвал.
+
+Мы развернули все слои в панели Layers и увидели, что скрытых слоёв нет.
+
+-->

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новостной портал по архитектуре</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header main-header--index-page">
+        <a class="main-header__logo">
+            <img class="main-header__logo-img" src="img/logo.svg" alt="Архитектурный блог" width="370" height="40">
+        </a>
+        <nav class="main-header__navigation">
+            <ul class="main-header__nav-list">
+                <li class="main-header__nav-item">
+                    <a href="#" class="main-header__nav-link">Современные здания</a>
+                </li>
+                <li class="main-header__nav-item">
+                    <a href="#" class="main-header__nav-link">Старинные здания</a>
+                </li>
+                <li class="main-header__nav-item">
+                    <a href="#" class="main-header__nav-link">Последние проекты</a>
+                </li>
+                <li class="main-header__nav-item">
+                    <a href="blog.html" class="main-header__nav-link">Архитектурные новости</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="visually-hidden">Новостной портал по архитектуре</h1>
+        <section class="promo">
+            <ol class="promo__slider">
+                <h2 class="visually-hidden">Главные новости</h2>
+                <li class="promo__slider-item promo__slider-item--active">
+                    <div class="promo__news promo__news--main">
+                        <img class="promo__news-img" src="img/promo-main.jpg" alt="Современное здание" width="780" height="490">
+                        <div class="promo__news-content">
+                            <p class="promo__news-title">Самые актуальные архитектурные новости</p>
+                            <a href="#" class="promo__news-btn button">Смотреть</a>
+                        </div>
+                    </div>
+                    <div class="promo__news">
+                        <img class="promo__news-img" src="img/promo-side-up.jpg" alt="Здание 2019 года" width="373" height="240">
+                        <div class="promo__news-content">
+                            <p class="promo__news-title">Архитектурная мода 2019 года</p>
+                            <a href="#" class="promo__news-btn button">Смотреть</a>
+                        </div>
+                    </div>
+                    <div class="promo__news">
+                        <img class="promo__news-img" src="img/promo-side-down.jpg" alt="Пример современного строения" width="373" height="240">
+                        <div class="promo__news-content">
+                            <p class="promo__news-title">Современные строения</p>
+                            <a href="#" class="promo__news-btn button">Смотреть</a>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+            <ul class="promo__controls controls">
+                <li class="controls__item">
+                    <button class="contols__btn" type="button">Первый слайд</button>
+                </li>
+                <li class="controls__item">
+                    <button class="contols__btn contols__btn--active" type="button">Второй слайд</button>
+                </li>
+                <li class="controls__item">
+                    <button class="contols__btn" type="button">Третий слайд</button>
+                </li>
+                <li class="controls__item">
+                    <button class="contols__btn" type="button">Четвёртый слайд</button>
+                </li>
+            </ul>
+        </section>
+        <section class="gallery">
+            <h2 class="gallery__title title">Современные здания</h2>
+            <div class="gallery__container">
+                <div class="gallery__item gallery__item--one-img">
+                    <img class="gallery__img" src="img/gallery-modern-1.jpg" alt="Пример современного офисного здания" width="404" height="623">
+                    <a href="#" class="gallery__link">Офисные здания</a>
+                </div>
+                <div class="gallery__item gallery__item--grid-wide">
+                    <img class="gallery__img" src="img/gallery-modern-2.jpg" alt="Пример современного жилого здания" width="332" height="292">
+                    <img class="gallery__img" src="img/gallery-modern-3.jpg" alt="Пример современного жилого здания" width="363" height="292">
+                    <img class="gallery__img gallery__img--wide" src="img/gallery-modern-4.jpg" alt="Пример современного жилого здания" width="715" height="245">
+                    <a href="#" class="gallery__link">Жилые помещения</a>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe">
+            <h2 class="subscribe__title">Подпишитесь на нашу e-mail рассылку</h2>
+            <form class="subscribe__form" action="#" method="post" id="subscribe-form-1">
+                <input class="subscribe__input" type="email" name="subscribe-input" placeholder="Введите Ваш e-mail">
+                <button class="subscribe__btn button" type="submit">Подписаться</button>
+            </form>
+        </section>
+        <section class="gallery">
+            <h2 class="gallery__title title">Старинные здания</h2>
+            <div class="gallery__container">
+                <div class="gallery__item gallery__item--one-img">
+                    <img class="gallery__img" src="img/gallery-old-1.jpg" alt="Мавзолей-мечеть Тадж-Махал" width="579" height="386">
+                    <a href="#" class="gallery__link">Религиозные строения</a>
+                </div>
+                <div class="gallery__item gallery__item--grid-tall">
+                    <img class="gallery__img" src="img/gallery-old-2.jpg" alt="Дворец изящных искусств Сан-Франциско" width="303" height="200">
+                    <img class="gallery__img gallery__img--tall" src="img/gallery-old-3.jpg" alt="Комплекс Чичен-Ица" width="217" height="346">
+                    <img class="gallery__img" src="img/gallery-old-4.jpg" alt="Луврский дворец" width="303" height="133">
+                    <a href="#" class="gallery__link">Туристические здания</a>
+                </div>
+            </div>
+        </section>
+        <section class="news-slider">
+            <h2 class="news-slider__title title">Архитектурные новости</h2>
+            <ul class="news-slider__list">
+                <li class="news-slider__item">
+                    <p class="news-slider__title">Самые необычные здания <span class="news-slider__main-text">во всем мире</span></p>
+                    <img class="news-slider__img" src="img/news-slider.jpg" alt="Одно из самых необычных зданий в мире" width="1920" height="618">
+                    <a href="#" class="news-slider__btn button">Смотреть</a>
+                </li>
+                <li class="news-slider__item news-slider__item--active">
+                    <p class="news-slider__text">Самые необычные здания <span class="news-slider__main-text">во всем мире</span></p>
+                    <img class="news-slider__img" src="img/news-slider.jpg" alt="Одно из самых необычных зданий в мире" width="1920" height="618">
+                    <a href="#" class="news-slider__btn button">Смотреть</a>
+                </li>
+                <li class="news-slider__item">
+                    <p class="news-slider__title">Самые необычные здания <span class="news-slider__main-text">во всем мире</span></p>
+                    <img class="news-slider__img" src="img/news-slider.jpg" alt="Одно из самых необычных зданий в мире" width="1920" height="618">
+                    <a href="#" class="news-slider__btn button">Смотреть</a>
+                </li>
+                <li class="news-slider__item">
+                    <p class="news-slider__title">Самые необычные здания <span class="news-slider__main-text">во всем мире</span></p>
+                    <img class="news-slider__img" src="img/news-slider.jpg" alt="Одно из самых необычных зданий в мире" width="1920" height="618">
+                    <a href="#" class="news-slider__btn button">Смотреть</a>
+                </li>
+            </ul>
+            <div class="news-slider__control-container">
+                <button class="news-slider__control-btn news-slider__control-btn--prev" type="button">Предыдущая новость</button>
+                <button class="news-slider__control-btn news-slider__control-btn--next" type="button">Следующая новость</button>
+                <ul class="news-slider__controls controls controls--white">
+                    <li class="controls__item">
+                        <button class="contols__btn" type="button">Первая новость</button>
+                    </li>
+                    <li class="controls__item">
+                        <button class="contols__btn contols__btn--active" type="button">Вторая новость</button>
+                    </li>
+                    <li class="controls__item">
+                        <button class="contols__btn" type="button">Третья новость</button>
+                    </li>
+                    <li class="controls__item">
+                        <button class="contols__btn" type="button">Четвёртая новость</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="subscribe">
+            <h2 class="subscribe__title">Подпишитесь на нашу e-mail рассылку</h2>
+            <form class="subscribe__form" action="#" method="post" id="subscribe-form-1">
+                <input class="subscribe__input" type="email" name="subscribe-input" placeholder="Введите Ваш e-mail">
+                <button class="subscribe__btn button" type="submit">Подписаться</button>
+            </form>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <ul class="social">
+            <li class="social__item">
+                <a href="#" class="social__link social__link--facebook">Фейсбук</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--twitter">Твиттер</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--instagram">Инстаграм</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--pinterest">Пинтерест</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--gplus">Гугл Плюс</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--spotify">Спотифай</a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link social__link--tumblr">Тамблер</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
